@@ -1,4 +1,4 @@
-Part One: command with no arguments.
+# Part One: command with no arguments. 1
 
 ![Image](Screen Shot 2024-04-08 at 2.09.10 PM.png)
 This is what 'cd' does with no arguments. 
@@ -33,6 +33,7 @@ We get an error saying that 'messages' is a directory and therefore cannot be co
 
 
 Part Three: command with a path to a file as an argument.
+
 ![Image](Screen Shot 2024-04-08 at 3.07.11 PM.png)
 This is what happens when 'cd' is used with a file as an argument.
 There is an error because the file is not a directory and we cannot change our directory to a file.  
