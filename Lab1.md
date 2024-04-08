@@ -1,4 +1,4 @@
-# Part One: command with no arguments. 1
+## Part One: command with no arguments.
 
 ![Image](Screen Shot 2024-04-08 at 2.09.10 PM.png)
 This is what 'cd' does with no arguments. 
@@ -15,7 +15,7 @@ This is what 'cat' does with no arguments.
 It doesn't do anything because there were no arguments meaning there are no contents to print.
 There was an error because there was nothing to concatenate. 
 
-Part Two: command with a path to a directory as an argument.
+## Part Two: command with a path to a directory as an argument.
 
 ![Image](Screen Shot 2024-04-08 at 2.21.08 PM.png)
 This is what 'cd' does with a directory as an argument.
@@ -32,7 +32,7 @@ This is what 'cat' does with a directory as an argument.
 We get an error saying that 'messages' is a directory and therefore cannot be concatenated. Because of this, we can conclude that only files can be concatenated. 
 
 
-Part Three: command with a path to a file as an argument.
+## Part Three: command with a path to a file as an argument.
 
 ![Image](Screen Shot 2024-04-08 at 3.07.11 PM.png)
 This is what happens when 'cd' is used with a file as an argument.
