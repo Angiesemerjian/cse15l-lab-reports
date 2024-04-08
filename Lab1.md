@@ -1,4 +1,4 @@
-** # Part One: command with no arguments.**
+# **Part One: command with no arguments.**
 
 ![Image](Screen Shot 2024-04-08 at 2.09.10 PM.png)
 This is what 'cd' does with no arguments. 
