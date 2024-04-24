@@ -59,6 +59,7 @@ The output is the file itself being listed since it is not a directory with file
 There is no error. 
 
 ---
+
 ![Image](Screen Shot 2024-04-24 at 4.22.31 PM.png)
 
 This is what happens when `cat` is used with a file as an argument. 
