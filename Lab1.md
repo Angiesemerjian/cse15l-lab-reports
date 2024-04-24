@@ -1,6 +1,6 @@
 # Part One: command with no arguments.
 
-![Image](new cd no directory.png)
+![Image](new cd no directory .png)
 ---
 This is what `cd` does with no arguments. 
 The directory was changed from the current directory to the home directory. In this case, we go from `Lecture1` to `/Users/angie`. Then, if we do `cd` once again while in the home directory, nothing changes because there is no parent directory. If we try this in another file, like `messages`, we would also go to the home directory, which is `/Users/angie`
