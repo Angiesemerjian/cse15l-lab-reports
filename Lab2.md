@@ -25,6 +25,7 @@ Screenshot 2: /add-message?s=today%20is%20beautiful&user=talia
 # Part 2 #
 ---
 Logging in without password
+
 ![Image](Screen Shot 2024-05-01 at 5.24.29 PM.png)
 
 ---
