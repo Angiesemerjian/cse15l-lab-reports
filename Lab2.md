@@ -11,11 +11,11 @@ Screenshot 1: /add-message?s=Test&user=angie
 
 ---
 1. The main methods that are being called are `main(String[] args)` , `start(int port)` , `Server.start(int port, URLHandler handler)` , `Server.start` , and `handleRequest(URI url)`
-2. 
-The `main(String[] args)` method in the `ChatServer` class checks for a provided port number as a command-line argument. If found, it starts the chat server using `start(int port)`, otherwise, it prompts for the missing port number and exits. Within `start(int port)`, the server initializes using `Server.start(int port, URLHandler handler)`, then notifies users of the server's status and access URL. Incoming requests with `/add-message?s=test&user=angie` are handled by the `handleRequest(URI url)` method in `ChatHandler`. Extracting parameters, it constructs a new chat message, appends it to the chat history, and returns the updated history.
+2. The `main(String[] args)` method in the `ChatServer` class checks for a provided port number as a command-line argument. If found, it starts the chat server using `start(int port)`, otherwise, it prompts for the missing port number and exits. Within `start(int port)`, the server initializes using `Server.start(int port, URLHandler handler)`, then notifies users of the server's status and access URL. Incoming requests with `/add-message?s=test&user=angie` are handled by the `handleRequest(URI url)` method in `ChatHandler`. Extracting parameters, it constructs a new chat message, appends it to the chat history, and returns the updated history.
 
 ---
 Screenshot 2: /add-message?s=today%20is%20beautiful&user=talia
+
 ![Image](Screen Shot 2024-04-29 at 3.32.26 PM.png)
 
 ---
