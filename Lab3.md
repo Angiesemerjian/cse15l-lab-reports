@@ -1,28 +1,39 @@
 # Part 1 #
 1.A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown).
-
-`@Test 
-public void testGetFilesFailure() throws IOException {
-    File testDirectory = new File("test_directory");
-    testDirectory.mkdir();
-    File testFile = new File(testDirectory, "test_file.txt");
-    testFile.createNewFile();
-    List<File> files = YourClassName.getFiles(testDirectory);
-    assertFalse(files.isEmpty()); // Incorrect assertion
-}`
-
+`
+@Test
+public void testFilterFailExample() {
+  List<String> inputList = new ArrayList<>();
+  inputList.add("apple");
+  inputList.add("orange");
+  inputList.add("banana");
+  
+  StringChecker alwaysTrueChecker = s -> true;
+  
+  List<String> filteredList = ListExamples.filter(inputList, alwaysTrueChecker);
+  
+  assertEquals(new ArrayList<>(), filteredList);
+}
+`
 2.An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown).
-`@Test 
-public void testGetFilesNoFailure() throws IOException {
-    File testDirectory = new File("test_directory");
-    testDirectory.mkdir();
-    File testFile = new File(testDirectory, "test_file.txt");
-    testFile.createNewFile();
-    List<File> files = YourClassName.getFiles(testDirectory);
-    assertTrue(files.contains(testFile)); // Correct assertion
-}`
+
+`@Test
+  public void testFilterPass() {
+    List<String> inputList = new ArrayList<>();
+    inputList.add("apple");
+    inputList.add("orange");
+    inputList.add("banana");
+    
+    StringChecker alwaysFalseChecker = s -> false;
+    
+    List<String> filteredList = ListExamples.filter(inputList, alwaysFalseChecker);
+    
+    assertTrue(filteredList.isEmpty());
+  }
+
 3. The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
 
+![Image](Screen Shot 2024-05-20 at 4.36.09 PM.png)
 
 
 # Part 2 #
