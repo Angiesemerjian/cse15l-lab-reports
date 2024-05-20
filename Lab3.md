@@ -33,14 +33,14 @@ public void testFilterFailExample() {
   }
 }
 ```
-3. The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
+3.The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
 
 ![Image](Screen Shot 2024-05-20 at 4.36.09 PM.png)
 
 The output of just the two new tests:
 ![Image](Screen Shot 2024-05-20 at 4.48.30 PM.png)
 
-4. The code before:
+4.The code before:
    ![Image](Screen Shot 2024-05-20 at 4.20.35 PM.png)
 
    The code after:
