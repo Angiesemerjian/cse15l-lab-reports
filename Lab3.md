@@ -33,7 +33,6 @@ public void testFilterFailExample() {
   }
 }
 ```
-
 3. The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
 
 ![Image](Screen Shot 2024-05-20 at 4.36.09 PM.png)
