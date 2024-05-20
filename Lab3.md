@@ -38,6 +38,9 @@ public void testFilterFailExample() {
 
 ![Image](Screen Shot 2024-05-20 at 4.36.09 PM.png)
 
+The output of just the two new tests:
+![Image](Screen Shot 2024-05-20 at 4.48.30 PM.png)
+
 4. The code before:
    ![Image](Screen Shot 2024-05-20 at 4.20.35 PM.png)
 
