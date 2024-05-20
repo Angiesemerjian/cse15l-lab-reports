@@ -1,7 +1,7 @@
 # Part 1 #
 1.A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown).
-`
-@Test
+ 
+ `@Test
 public void testFilterFailExample() {
   List<String> inputList = new ArrayList<>();
   inputList.add("apple");
@@ -13,8 +13,8 @@ public void testFilterFailExample() {
   List<String> filteredList = ListExamples.filter(inputList, alwaysTrueChecker);
   
   assertEquals(new ArrayList<>(), filteredList);
-}
-`
+}`
+
 2.An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown).
 
 `@Test
@@ -30,6 +30,8 @@ public void testFilterFailExample() {
     
     assertTrue(filteredList.isEmpty());
   }
+}
+`
 
 3. The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
 
