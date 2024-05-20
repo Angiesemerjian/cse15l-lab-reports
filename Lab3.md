@@ -7,12 +7,12 @@ public void testFilterFailExample() {
   inputList.add("apple");
   inputList.add("orange");
   inputList.add("banana");
+  `
+ `StringChecker alwaysTrueChecker = s -> true;`
   
-  StringChecker alwaysTrueChecker = s -> true;
+ ` List<String> filteredList = ListExamples.filter(inputList, alwaysTrueChecker);`
   
-  List<String> filteredList = ListExamples.filter(inputList, alwaysTrueChecker);
-  
-  assertEquals(new ArrayList<>(), filteredList);
+`  assertEquals(new ArrayList<>(), filteredList);
 }`
 
 2.An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown).
@@ -22,14 +22,14 @@ public void testFilterFailExample() {
     List<String> inputList = new ArrayList<>();
     inputList.add("apple");
     inputList.add("orange");
-    inputList.add("banana");
+    inputList.add("banana");`
     
     StringChecker alwaysFalseChecker = s -> false;
     
     List<String> filteredList = ListExamples.filter(inputList, alwaysFalseChecker);
     
     assertTrue(filteredList.isEmpty());
-  }
+  `}
 }
 `
 
