@@ -54,18 +54,18 @@ The issue was that in the `filter` method, the elements were not being added cor
 I will be using the `find` command. 
 
 1.Using -name to search for files or directories with a specific name:
-[
+
    `find ./technical -name "example.txt"`
 
  
-   This command finds the file that is called `"example.java"`]
+   This command finds the file that is called `"example.java"`
    
    
-   [`find ./technical -name "*.java"`
+   `find ./technical -name "*.java"`
 
    
    this command finds every file that is a .java file.
-   ]
+   
    
 2.Using -type to search for specific types of files:
  
