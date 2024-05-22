@@ -65,7 +65,7 @@ I will be using the `find` command.
 
    ---
    ![Image](Screen Shot 2024-05-21 at 9.59.50 PM.png)
-   
+   ---
    
 2.Using `-type` to search for specific types of files:
  
@@ -79,7 +79,7 @@ This is a screenshot of the output of ` find ./technical -type d`
 
 ---
 ![Image](Screen Shot 2024-05-21 at 10.01.29 PM.png)
-
+---
    
 3.Using `-size` to search for files of a specific size:
    
@@ -94,7 +94,7 @@ This is the output of the `find ./technical -type f -size +100K` command.
 
 ---
 ![Image](Screen Shot 2024-05-21 at 10.04.28 PM.png)
-
+---
 
 4.Using `-exec` to perform an action on each file found:
    
@@ -109,8 +109,10 @@ This is the output of the `find ./technical -type f -exec grep "error that" {} \
 
 ---
 ![Image](Screen Shot 2024-05-21 at 10.10.57 PM.png)
+---
 
-##Sources##
+
+#Sources#
 The following website was used for the explanations of the `find` commands. 
 `https://math2001.github.io/article/bashs-find-command/` This source had lots of information on how to use the find command, including all of the commands that the find command can work with. (`-not, -or ,-and, etc. `) This is where I found most of the information used for this lab report. The rest was information that I already knew and/or learned in lecture. 
 
