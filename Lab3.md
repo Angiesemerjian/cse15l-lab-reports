@@ -56,8 +56,10 @@ I will be using the `find` command.
 
 1.Using `-name` to search for files or directories with a specific name:
 
-   `find ./technical -name "example.txt"
-    find ./technical -name "*.java"`
+   ```
+   find ./technical -name "example.txt"
+    find ./technical -name "*.java"
+```
  
    The first command finds the file that is called `"example.java"` specifically, while the second command finds every file that is a `.java` file. There are no `.java` files in the `/technical` directory, so the output is empty. 
    ![Image](Screen Shot 2024-05-21 at 9.59.50 PM.png)
@@ -65,8 +67,10 @@ I will be using the `find` command.
    
 2.Using `-type` to search for specific types of files:
  
-   `find ./technical -type f
-    find ./technical -type d`
+   ```
+   find ./technical -type f
+   find ./technical -type d
+```
  
  The first command searches for regular files within the `./technical` directory. It's useful when you want to list all files without including directories. The second command searches for directories within the `./technical` directory. It's helpful when you want to list only directories without including files.
 This is a screnshot of the output of ` find ./technical -type d`
@@ -75,8 +79,10 @@ This is a screnshot of the output of ` find ./technical -type d`
    
 3.Using `-size` to search for files of a specific size:
    
-   `find ./technical -type f -size +100K
-    find ./technical -type f -size -10k`
+   ```
+   find ./technical -type f -size +100K
+   find ./technical -type f -size -10k
+```
 
  
 The first command searches for files larger than 100 kikobytes within the `./technical` directory. It's useful when you need to find large files that may be taking up significant disk space. The second command searches for files smaller than 10 kilobytes within the `./technical` directory. It's helpful for finding small files that may be insignificant or can be safely deleted.
@@ -86,8 +92,10 @@ This is the output of the find `./technical -type f -size +100K` command.
 
 4.Using `-exec` to perform an action on each file found:
    
-   `find ./technical -type f -exec ls -l {} \;
-   find ./technical -type f -exec grep "search_term" {} \;`
+   ```
+   find ./technical -type f -exec ls -l {} \;
+   find ./technical -type f -exec grep "search_term" {} \;
+```
    
 
   The first command executes the `ls -l` command on each regular file found within the `./technical` directory, displaying detailed information for each file. It's useful for performing actions, such as listing detailed information or performing operations, on each file found. The second command searches for a specific term within each regular file found within the `./technical` directory using the grep command. It's helpful for searching for specific content within multiple files.
