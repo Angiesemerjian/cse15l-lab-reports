@@ -112,7 +112,7 @@ This is the output of the `find ./technical -type f -exec grep "error that" {} \
 ---
 
 
-#Sources#
+# Sources #
 The following website was used for the explanations of the `find` commands. 
 `https://math2001.github.io/article/bashs-find-command/` This source had lots of information on how to use the find command, including all of the commands that the find command can work with. (`-not, -or ,-and, etc. `) This is where I found most of the information used for this lab report. The rest was information that I already knew and/or learned in lecture. 
 
