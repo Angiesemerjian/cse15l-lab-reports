@@ -62,6 +62,8 @@ I will be using the `find` command.
 ```
  
    The first command finds the file that is called `"example.java"` specifically, while the second command finds every file that is a `.java` file. There are no `.java` files in the `/technical` directory, so the output is empty. 
+
+   ---
    ![Image](Screen Shot 2024-05-21 at 9.59.50 PM.png)
    
    
@@ -73,7 +75,9 @@ I will be using the `find` command.
 ```
  
  The first command searches for regular files within the `./technical` directory. It's useful when you want to list all files without including directories. The second command searches for directories within the `./technical` directory. It's helpful when you want to list only directories without including files.
-This is a screnshot of the output of ` find ./technical -type d`
+This is a screenshot of the output of ` find ./technical -type d`
+
+---
 ![Image](Screen Shot 2024-05-21 at 10.01.29 PM.png)
 
    
@@ -85,8 +89,10 @@ This is a screnshot of the output of ` find ./technical -type d`
 ```
 
  
-The first command searches for files larger than 100 kikobytes within the `./technical` directory. It's useful when you need to find large files that may be taking up significant disk space. The second command searches for files smaller than 10 kilobytes within the `./technical` directory. It's helpful for finding small files that may be insignificant or can be safely deleted.
-This is the output of the find `./technical -type f -size +100K` command. 
+The first command searches for files larger than 100 kilobytes within the `./technical` directory. It's useful when you need to find large files that may be taking up significant disk space. The second command searches for files smaller than 10 kilobytes within the `./technical` directory. It's helpful for finding small files that may be insignificant or can be safely deleted.
+This is the output of the `find ./technical -type f -size +100K` command. 
+
+---
 ![Image](Screen Shot 2024-05-21 at 10.04.28 PM.png)
 
 
@@ -100,4 +106,11 @@ This is the output of the find `./technical -type f -size +100K` command.
 
   The first command executes the `ls -l` command on each regular file found within the `./technical` directory, displaying detailed information for each file. It's useful for performing actions, such as listing detailed information or performing operations, on each file found. The second command searches for a specific term within each regular file found within the `./technical` directory using the grep command. It's helpful for searching for specific content within multiple files.
 This is the output of the `find ./technical -type f -exec grep "error that" {} \;` command. It shows all of the text that has the specific search term, which in this case is "error that"
+
+---
 ![Image](Screen Shot 2024-05-21 at 10.10.57 PM.png)
+
+##Sources##
+The following website was used for the explanations of the `find` commands. 
+`https://math2001.github.io/article/bashs-find-command/` This source had lots of information on how to use the find command, including all of the commands that the find command can work with. (`-not, -or ,-and, etc. `) This is where I found most of the information used for this lab report. The rest was information that I already knew and/or learned in lecture. 
+
