@@ -121,7 +121,7 @@ if __name__ == "__main__":
     run_java()
 ```
 
-The issue is how the java runtime locates the working directory when invoked from the Python script. To make sure that the `data.txt` file is found we must modify `runner.py`. We have to set the java runtimes working directory explicitly using the `cwd` parameter in the `subproess.run`.  
+The issue is how the java runtime locates the working directory when invoked from the Python script. To make sure that the `data.txt` file is found we must modify `runner.py`. We have to set the java runtimes working directory explicitly using the `cwd` parameter in the `subprocess.run`.  
 
 ---
 # Part 2 #
