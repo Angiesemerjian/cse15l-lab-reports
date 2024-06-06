@@ -1,5 +1,5 @@
 ---
-#Part 1# 
+# Part 1 #
 ---
 Student Post 
 ---
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 The issue is how the java runtime locates the working directory when invoked from the Python script. To make sure that the `data.txt` file is found we must modify `runner.py`. We have to set the java runtimes working directory explicitly using the `cwd` parameter in the `subproess.run`.  
 
 ---
-#Part 2#
+# Part 2 #
 ---
 
 I really enjoyed learning about Vim during the second half of the quarter. I also learned the importance of learning how to use lab machines and my personal machine because I've been having some trouble with the skill demos because I'm not used lab machines. The skill demos have been pretty challenging but have been a good way to practice and prove my skills. 
